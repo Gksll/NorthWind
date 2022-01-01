@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2602EB3A-49B8-469D-A43E-944EFFE4B84A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NorthWind</RootNamespace>
+    <AssemblyName>NorthWind</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\BolgeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BolgeEkle.Designer.cs">
+      <DependentUpon>BolgeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BolgeGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BolgeGoster.Designer.cs">
+      <DependentUpon>BolgeGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CalisanBolge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CalisanBolge.Designer.cs">
+      <DependentUpon>CalisanBolge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CalisanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CalisanEkle.Designer.cs">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CalisanGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CalisanGoster.Designer.cs">
+      <DependentUpon>CalisanGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NorthWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NorthWnd.Designer.cs">
+      <DependentUpon>NorthWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KategoriEkle.Designer.cs">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KategoriGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KategoriGoster.Designer.cs">
+      <DependentUpon>KategoriGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MahalleEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MahalleEkle.Designer.cs">
+      <DependentUpon>MahalleEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MahalleGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MahalleGoster.Designer.cs">
+      <DependentUpon>MahalleGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriGoster.Designer.cs">
+      <DependentUpon>MusteriGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayEkle.Designer.cs">
+      <DependentUpon>SiparisDetayEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayGoster.Designer.cs">
+      <DependentUpon>SiparisDetayGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisEkle.Designer.cs">
+      <DependentUpon>SiparisEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisleriGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisleriGoster.Designer.cs">
+      <DependentUpon>SiparisleriGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TedarikciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TedarikciEkle.Designer.cs">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TedarikciGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TedarikciGoster.Designer.cs">
+      <DependentUpon>TedarikciGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LojistikEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LojistikEkle.Designer.cs">
+      <DependentUpon>LojistikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LojistikGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LojistikGoster.Designer.cs">
+      <DependentUpon>LojistikGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYapanKullanici.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\UrunGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UrunGoster.Designer.cs">
+      <DependentUpon>UrunGoster.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\BolgeEkle.resx">
+      <DependentUpon>BolgeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BolgeGoster.resx">
+      <DependentUpon>BolgeGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CalisanBolge.resx">
+      <DependentUpon>CalisanBolge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CalisanEkle.resx">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CalisanGoster.resx">
+      <DependentUpon>CalisanGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NorthWnd.resx">
+      <DependentUpon>NorthWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KategoriEkle.resx">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KategoriGoster.resx">
+      <DependentUpon>KategoriGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LojistikEkle.resx">
+      <DependentUpon>LojistikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MahalleEkle.resx">
+      <DependentUpon>MahalleEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MahalleGoster.resx">
+      <DependentUpon>MahalleGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriGoster.resx">
+      <DependentUpon>MusteriGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisDetayEkle.resx">
+      <DependentUpon>SiparisDetayEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisDetayGoster.resx">
+      <DependentUpon>SiparisDetayGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisEkle.resx">
+      <DependentUpon>SiparisEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisleriGoster.resx">
+      <DependentUpon>SiparisleriGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TedarikciEkle.resx">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TedarikciGoster.resx">
+      <DependentUpon>TedarikciGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LojistikGoster.resx">
+      <DependentUpon>LojistikGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\UrunGoster.resx">
+      <DependentUpon>UrunGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{C5771EF3-206C-41D7-B9BF-ED0D605A865F}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tobias-bjørkli-2113566.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-stein-egil-liland-5421888.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
