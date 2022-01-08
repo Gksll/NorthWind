@@ -15,6 +15,8 @@ namespace NorthWind
     public partial class UrunGoster : Form
     {
         DataModel dm = new DataModel();
+        List<Product> products;
+        bool durum;
         public UrunGoster()
         {
             InitializeComponent();
@@ -22,26 +24,50 @@ namespace NorthWind
 
         private void UrunGoster_Load(object sender, EventArgs e)
         {
+            products = new List<Product>();
             dgw_Products.DataSource = dm.GetProduct();
+            products = dm.GetProduct();
             dgw_Products.Columns[0].Visible = false;
             dgw_Products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgw_Products.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             dgw_Products.AllowUserToOrderColumns = true;
             dgw_Products.AllowUserToResizeColumns = true;
-            //dgw_Products.Columns[5].Width = 150;
-            dgw_Products.Columns[1].HeaderText ="Ürün İsmi";
-            dgw_Products.Columns[4].HeaderText = "Ürün Paket Miktarı";
-            dgw_Products.Columns[5].HeaderText = "Ürün Fiyatı";
-            dgw_Products.Columns[6].HeaderText = "Stok Adet";
-            dgw_Products.Columns[7].HeaderText = "Sipariş edilmiş Adet";
-            dgw_Products.Columns[8].HeaderText = "Ortalama Sipariş Adet";
-            dgw_Products.Columns[9].HeaderText = "Üretilmiyor?";
-
-
-           // dgw_Products.Columns[2].Visible = false;
-          //  dgw_Products.Columns[3].Visible = false;
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            dgw_Products.Columns.Add(btn);
+            btn.HeaderText = "Delete";
+            btn.Text = "Sil";
+            btn.Name = "btn";
+            btn.UseColumnTextForButtonValue = true;
         }
 
-
+        private void dgw_Products_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           // MessageBox.Show((e.ColumnIndex.ToString())+" - "+(e.RowIndex.ToString()));
+            if (e.ColumnIndex == 0)
+            {
+                Product product = new Product();
+                product = products[e.RowIndex];
+               DialogResult s= MessageBox.Show(product.Name+" adlı ürün siliecektir. Onayılıyor musunuz?","Uyarı",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (s == DialogResult.Yes) 
+                {
+                     durum = dm.DeleteProduct(product.ID);
+                }
+                else
+                {
+                    durum = false;
+                }
+                
+                if (durum)
+                {
+                    MessageBox.Show("Kayıt silinmiştir.");
+                }
+                else
+                {
+                    MessageBox.Show("Hata");
+                }
+                
+         }
+            dgw_Products.DataSource = dm.GetProduct();
+        }
     }
 }

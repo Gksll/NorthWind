@@ -38,19 +38,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgw_Products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_Products.Location = new System.Drawing.Point(12, 12);
+            this.dgw_Products.Location = new System.Drawing.Point(7, 6);
+            this.dgw_Products.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgw_Products.Name = "dgw_Products";
             this.dgw_Products.RowHeadersWidth = 72;
             this.dgw_Products.RowTemplate.Height = 31;
-            this.dgw_Products.Size = new System.Drawing.Size(1631, 1156);
+            this.dgw_Products.Size = new System.Drawing.Size(890, 626);
             this.dgw_Products.TabIndex = 0;
+            this.dgw_Products.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_Products_CellContentClick);
             // 
             // UrunGoster
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1655, 1180);
+            this.ClientSize = new System.Drawing.Size(903, 575);
             this.Controls.Add(this.dgw_Products);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UrunGoster";
             this.Text = "UrunGoster";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -55,3 +55,5 @@ C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\obj\Debug\NorthWind.Form
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\obj\Debug\NorthWind.Forms.KullaniciGiris.resources
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\obj\Debug\NorthWind.Forms.KayitOl.resources
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\obj\Debug\NorthWind.Form1.resources
+C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\bin\Debug\Dapper.dll
+C:\Users\Red_Beard\Documents\GitHub\NorthWind\NorthWind\bin\Debug\Dapper.xml

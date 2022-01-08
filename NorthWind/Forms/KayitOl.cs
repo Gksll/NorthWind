@@ -98,5 +98,62 @@ namespace NorthWind.Forms
                 sifreDurum = true;
             }
         }
+
+        private void btn_Sifre_Goster_Click(object sender, EventArgs e)
+        {
+            bool d = tb_Sifre.UseSystemPasswordChar;
+            if (d)
+            {
+                tb_Sifre.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tb_Sifre.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void KayitOl_Load(object sender, EventArgs e)
+        {
+            if (tb_Sifre.Text==String.Empty)
+            {
+                btn_Sifre_Goster.Visible = false;
+            }
+            if (tb_Onay.Text == String.Empty)
+            {
+                btn_Onayla.Visible = false;
+            }
+        }
+
+       
+
+        private void tb_Sifre_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_Sifre.Text != String.Empty)
+            {
+                btn_Sifre_Goster.Visible = true;
+            }
+
+        }
+
+        private void tb_Onay_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_Onay.Text != String.Empty)
+            {
+                btn_Onayla.Visible = true;
+            }
+        }
+
+        private void btn_Onayla_Click(object sender, EventArgs e)
+        {
+            bool d = tb_Onay.UseSystemPasswordChar;
+            if (d)
+            {
+                tb_Onay.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tb_Onay.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

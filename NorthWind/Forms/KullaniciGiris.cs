@@ -40,7 +40,7 @@ namespace NorthWind.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Kullanıcı Bulunamadı", "Giriş Hatası");
+                    MessageBox.Show("Şifre yada Kullanıcı hatalı");
                 }
             }
             else

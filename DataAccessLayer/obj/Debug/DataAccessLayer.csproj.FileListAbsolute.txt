@@ -10,3 +10,6 @@ C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\obj\Debug\DataAcce
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\bin\Debug\Dapper.dll
+C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\bin\Debug\Dapper.xml
+C:\Users\Red_Beard\Documents\GitHub\NorthWind\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
