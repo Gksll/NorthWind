@@ -838,50 +838,5 @@ namespace DataAccessLayer
         }
 
         //-------------
-
-        public bool DeleteProduct(int id) 
-        {
-            try
-            {
-                con.Open();
-                cmd.CommandText = "DELETE products WHERE ProductID=@id";
-                con.Query<Product>(cmd.CommandText, new { @id = id }).ToList();
-                
-
-                return true;
-            }
-            catch 
-            {
-                return false;
-                
-            }
-            finally 
-            {
-                con.Close();
-            }
-        }
-
-        public bool DeleteCategory(int id) 
-        {
-            try
-            {
-                con.Open();
-                cmd.CommandText = "Delete Categories WHERE CategoryID=@id";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.ExecuteNonQuery();
-                // con.Query<Category>(cmd.CommandText, new { @id = id}).ToList();
-                return true;
-            }
-            catch 
-            {
-                return false;
-            }
-            finally 
-            {
-                con.Close();
-            }
-        }
-
     }
 }

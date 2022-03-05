@@ -88,6 +88,12 @@ namespace NorthWind.Forms
 
         private void tb_Onay_Validated(object sender, EventArgs e)
         {
+           
+                if (tb_Onay.Text == String.Empty)
+                {
+                btn_Onayla.Visible = false;
+                }
+            
             if (tb_Sifre.Text != tb_Onay.Text && tb_Sifre.Text != String.Empty && tb_Onay.Text != String.Empty)
             {
                 MessageBox.Show("Girdiğiniz şifreler eşleşmedi. Tekrar deneyin.");
@@ -153,6 +159,17 @@ namespace NorthWind.Forms
             else
             {
                 tb_Onay.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void tb_Sifre_Validated(object sender, EventArgs e)
+        {
+            if (true)
+            {
+                if (tb_Sifre.Text == String.Empty)
+                {
+                    btn_Sifre_Goster.Visible = false;
+                }
             }
         }
     }

@@ -45,7 +45,6 @@
             this.dgw_Products.RowTemplate.Height = 31;
             this.dgw_Products.Size = new System.Drawing.Size(890, 626);
             this.dgw_Products.TabIndex = 0;
-            this.dgw_Products.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_Products_CellContentClick);
             // 
             // UrunGoster
             // 

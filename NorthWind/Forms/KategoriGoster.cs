@@ -33,41 +33,8 @@ namespace NorthWind
             //dgw_Category.AllowUserToResizeColumns = true;
             dgw_Category.Columns[1].HeaderText = "İsimler";
             dgw_Category.Columns[2].HeaderText = "Açıklamalar";
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            dgw_Category.Columns.Add(btn);
-            btn.HeaderText = "Delete";
-            btn.Text = "Sil";
-            btn.Name = "btn";
-            btn.UseColumnTextForButtonValue = true;
-        }
-
-        private void dgw_Category_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //MessageBox.Show((e.ColumnIndex.ToString()) + " - " + (e.RowIndex.ToString()));
-            if (e.ColumnIndex == 0)
-            {
-                Category category = new Category();
-                category = categories[e.RowIndex];
-                DialogResult s = MessageBox.Show(category.Name + " adlı ürün siliecektir. Onayılıyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (s == DialogResult.Yes)
-                {
-                    durum = dm.DeleteCategory(category.ID);
-                }
-                else
-                {
-                    durum = false;
-                }
-
-                if (durum)
-                {
-                    MessageBox.Show("Kayıt silinmiştir.");
-                }
-                else
-                {
-                    MessageBox.Show("Hata");
-                }
-            }
-            dgw_Category.DataSource = dm.GetCategory();
+            int sayi = dgw_Category.Columns.Count;
+            MessageBox.Show(sayi.ToString());
 
         }
     }

@@ -44,7 +44,6 @@
             this.dgw_Category.RowTemplate.Height = 31;
             this.dgw_Category.Size = new System.Drawing.Size(1127, 630);
             this.dgw_Category.TabIndex = 0;
-            this.dgw_Category.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_Category_CellContentClick);
             // 
             // KategoriGoster
             // 
